@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Регистрация нового пользователя</title>
+	<style type="text/css">
+		form{
+			width: 500px;
+			margin: auto;
+
+		}
+		input{
+			width: 100%;
+		}
+	</style>
+<body>
+	<div>
+		<form method="POST" name="userForm">
+			<fieldset>
+				<legend>
+					<strong>Форма</strong>
+				</legend>
+				<label for="email">Email</label>
+				<input id="email" type="email" name="email" placeholder="например user@domain.ru" required>
+				<hr>
+				<label for="login">Login</label>
+				<input id="login" type="login" name="login" required minlength="3" placeholder="не менее трех символов">
+				<hr>
+				<label for="password">Password</label>
+				<input id="password" type="password" name="password" maxlength="5" required placeholder="не более пяти символов">
+				<hr>
+				<label for="confirmPassword">Confirm password</label>
+				<input id="confirmPassword" type="password" name="confirmPassword" maxlength="5" required>
+				<hr>
+				<label for="avatar">Выбрать аватар</label>
+				<input id="avatar" type="file" name="file" accept="image/*">
+				<hr>
+				<button type="submit">Отправить</button>
+			</fieldset>
+		</form>
+	</div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Вход пользователя</title>
+	<style type="text/css">
+		form{
+			width: 500px;
+			margin: auto;
+			
+		}
+		input{
+			width: 100%;
+		}
+	</style>
+<body>
+	<div>
+		<form method="POST" name="loginForm">
+			<fieldset>
+				<legend>
+					<strong>Форма</strong>
+				</legend>
+				<label for="email">Email</label>
+				<input id="email" type="email" name="email" placeholder="например user@domain.ru" required>
+				<hr>
+
+				<label for="password">Password</label>
+				<input id="password" type="password" name="password" maxlength="5" required placeholder="не более пяти символов">
+			
+				<hr>
+				<button type="submit">Отправить</button>
+			</fieldset>
+		</form>
+	</div>
+</body>
+</html>
