@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Меню Форма и Фон</title>
+	<link rel="stylesheet" type="text/css" href="../assets/css/styles.css">
+</head>
+<body>
+
+	<div>
+		<ul>
+			<li class="bg-custom">
+				<h4>
+					<a href="../page_one.html">
+						Страница 1
+					</a>
+				</h4>
+			</li>
+			<li>
+				<h4>
+					<a href="../page_two.html">
+						Страница 2
+					</a>
+				</h4>
+			</li>
+			<li class="bg-custom">
+				<h4>
+					<a href="../page_three.html">
+						Страница 3
+					</a>
+				</h4>
+			</li>
+			<li>
+				<h4>
+					<a href="../login.html">
+						Login
+					</a>
+				</h4>
+			</li>
+			<li class="bg-custom">
+				<h4>
+					<a href="../signup.html">
+						Signup
+					</a>
+				</h4>
+			</li>
+		</ul>
+	</div>
+	
+	<div id="form-container">
+		<form>
+			<!--С Вашего разрешения без fieldset и legend-->
+			<section class="inputContainer">
+				<div class="localWrapper">
+					<label for="nickname">Ваше имя</label>
+					<br>
+					<input id="nickname" type="text" name="nickname" minlength="3" placeholder="не менее трех символов" required autofocus>
+				</div>
+			</section>
+			<section class="inputContainer">
+				<div class="localWrapper">
+					<label for="email">E-mail</label>
+					<br>
+					<input id="email" type="email" name="email" placeholder="например user@domain.com" required autocomplete="on">
+				</div>
+			</section>
+			<section class="inputContainer">
+				<div id="sex" class="localWrapper">
+					<label for="sex">Пол</label>
+					<br>
+					<label for="m">м</label>
+					<input id="m" type="radio" name="sex" value="m">
+					<label for="f">ж</label>
+					<input id="f" type="radio" name="sex" value="f">
+					<label for="other">другое</label>
+					<input id="other" type="radio" name="sex" value="other" disabled="">
+				</div>
+			</section>
+			<section class="inputContainer">
+				<div class="localWrapper">
+					<label for="country">Страна</label>
+					<br>
+					<select id="country" required>
+					  <option value="Russia">Россия</option>
+					  <option value="USA">США</option>
+					  <option value="USSR" disabled="">СССР</option>
+					</select>
+				</div>
+			</section>
+			<section class="inputContainer">
+				<div class="localWrapper">
+					<label for="age">Дата рождения</label>
+					<br>
+					<input type="date" id="age" required>
+				</div>
+			</section>
+			<section class="inputContainer">
+				<div class="localWrapper">
+					<label for="phone">Мобильный номер</label>
+					<br>
+					<input id="phone" type="text" name="phone" placeholder="+7-xxx-xx-xx" required pattern="(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?"> 
+				</div>
+			</section>
+			<section class="inputContainer">
+				<div class="localWrapper">
+					<label for="hobby">Ваши увлечения</label>
+					<br>
+					<select id="hobby" multiple="true" size="6">
+					 <optgroup label="Спорт (можно выбрать несколько)">
+					  <option value="football">Футбол</option>
+					  <option value="boxing">Бокс</option>
+					  <option value="unknown">Квиддич</option>
+					 </optgroup> 
+					 <optgroup label="Кино">
+					  <option value="action">Боевик</option>
+					  <option value="comedy">Комедия</option>
+					  <option value="drama">Драма</option>
+					 </optgroup>
+					</select>
+				</div>
+			</section>
+			<section class="inputContainer">
+				<div class="localWrapper">
+					<label for="desc">О себе</label>
+					<br>
+					<textarea placeholder="не более 160 символов" id="desc" name="desc" required maxlength="160" cols="35" rows="5">
+					</textarea>
+				</div>
+			</section>
+			<section class="inputContainer">
+				<div class="localWrapper">
+					<label for="avatar">Аватар</label>
+					<br>
+					<input type="file" id="avatar" accept="image/*">
+				</div>
+			</section>
+			<section class="inputContainer">
+				<div class="localWrapper">
+					<button type="submit">отправить</button>
+				</div>
+			</section>
+		</form>
+	</div>
+
+	<!--Текст заглушка для демонстрации фиксации фона-->
+	<footer>
+		<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</footer>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+		body{
+			background-image: url("../img/image_2.jpg");
+			background-size: cover;
+			background-attachment: fixed;
+			box-sizing: border-box;
+		}
+		ul{
+			list-style-type: none;
+			width: 100%;
+			padding-left: 0;
+		}
+		ul > li{
+			width: 19.5%;
+			text-align: center;
+			border: 1px solid black;
+			display: inline-block;
+			border-top-left-radius: 10px;
+			border-top-right-radius:10px;
+		}
+
+		.bg-custom{
+			background-color: lightblue;
+		}
+		.bg-custom a{
+			color: white;
+			font-weight: bold;
+			text-decoration: none;
+		}
+		#form-container{
+			border: 1px solid gray;
+			border-radius: 10px;
+			background-color: rgba(51,51,51,.35);
+			width: 50%;
+			margin: auto;
+		}
+		.inputContainer{
+			width: 50%;
+			margin: auto;
+			padding-bottom: 10px;
+			border-bottom: 2px solid white;
+		}
+		.localWrapper{
+			width: 75%;
+			margin:auto;
+		}
+		label{
+			font-size: 16px;
+			color: white;
+			font-weight: bold;
+		}
+
+		input[name="nickname"], input[name="email"]{
+			font-weight: bold;
+			width: 100%;
+		}
+		footer{
+			width:50%;
+			margin: auto;
+		}

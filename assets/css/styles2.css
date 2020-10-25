@@ -1,0 +1,36 @@
+*{
+	color: gray;
+	font-weight: bold;
+}
+article{
+	width: 50%;
+	margin-left: 25%;
+	padding-bottom: 10px;
+	border-top: 3px dotted gray;
+}
+.header, .name-date, .more{
+	text-align: center;
+}
+.name-date > p {
+	font-weight: normal !important;
+}
+.content > p {
+	text-align: justify;
+}
+.link{
+	color: lightblue;
+	cursor: pointer;
+}
+.image{
+	width: 50%;
+	margin:auto;
+}
+img{
+	width: 100%;
+}
+.more span{
+	padding:3px;
+	border:1px solid gray;
+	border-radius: 5px;
+	cursor: pointer;
+}
