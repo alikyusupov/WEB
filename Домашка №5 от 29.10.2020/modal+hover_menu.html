@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Модалка и всплывающее меню</title>
+	<link rel="stylesheet" type="text/css" href="../assets/css/flex.css">
+</head>
+<body>
+	<nav>
+		<ul class="menu">
+			<li>
+				<img id="logo" src="../assets/img/logo.png">
+			</li>
+			<li class="grow-1">
+				<!--пусто-->
+			</li>
+			<li>
+				Contacts
+			</li>
+			<li id="submenu-parent">
+				Products
+				<div class="submenu">
+					<ul>
+						<li>
+							Courses
+						</li>
+						<li>
+							Merch
+						</li>
+						<li>
+							Franchise
+						</li>
+					</ul>
+				</div>
+			</li>
+			<li>
+				Cart
+			</li>
+		</ul>
+	</nav>
+	<main>
+		<a href="#modalBG"><span class="btn">Open modal</span></a>
+	</main>
+	<div class="modal-bg" id="modalBG">
+		
+	</div>
+	<div class="modal-body">
+		<section class="close">
+			<a href="#">x</a>
+		</section>
+		<section class="modal-content">
+				<h3>Word</h3>
+				<h3>Word</h3>
+				<h3>Word</h3>
+				<h3>Word</h3>
+		</section>
+	</div>
+</body>
+</html>
