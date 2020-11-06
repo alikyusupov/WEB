@@ -1,0 +1,29 @@
+
+.highest, .middle, .lowest{
+	cursor: pointer;
+	animation-name: dropdown;
+	animation-duration: .8s;
+	animation-fill-mode: forwards;
+	transform: translateY(-200%);
+}
+
+.highest{
+	animation-delay: .2s;
+}
+
+.middle{
+	animation-delay: .4s;
+}
+
+.lowest{
+	animation-delay: .6s;
+}
+
+
+@keyframes dropdown{
+
+	100%{
+		transform: translateY(0);
+		opacity: 1;
+	}
+}

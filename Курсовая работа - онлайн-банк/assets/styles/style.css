@@ -1,0 +1,238 @@
+
+/*********** Общие стили **********/
+
+@font-face {
+    font-family: 'prettyFont'; /*a name to be used later*/
+    src: url("../fonts/pretty_font.ttf"); /*URL to font*/
+}
+
+*{
+	box-sizing: border-box;
+	list-style-type: none;
+	margin: 0;
+    padding: 0;
+}
+
+a{
+	text-decoration: none;
+}
+a:visited, a:focus, a:active {
+      color: inherit;
+ }
+
+
+
+#body_cards{
+	background-image: url(../images/mini_world.png);
+	background-position:50% 50%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+body{
+	font-family: 'prettyFont';
+	min-height: 100vh;
+	min-width: 375px;
+}
+
+/******** Навигация *********/
+
+nav{
+	background-color: rgba(235, 117, 120, .8);
+	position: sticky;
+	color: white;
+	top:0;
+	right: 0;
+	left: 0;
+}
+
+nav > ul {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding-right: 10px;
+
+}
+
+nav > ul > li{
+	margin-left: 6px;
+	padding: 3px;
+	border-radius: 3px;
+}
+
+.menu-item:hover{
+	cursor: pointer;
+	color: gray;
+	background-color: white;
+}
+
+#logo{
+	transform: scale(1);
+	transition: .3s ease-in-out;
+}
+
+#logo:hover{
+	cursor: pointer;
+	transform: scale(1.1);
+	transition: .3s ease-in-out;
+}
+
+nav > ul:first-child img{
+	width: 50px;
+}
+
+nav > ul > li:nth-child(2){
+	flex-grow: 1;
+}
+
+.badge-holder{
+	position: relative;
+}
+
+.badge{
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	background-color: rgba(166, 227, 194,.75);
+	font-size: 0.8em;
+	top:-5px;
+	transform: translateX(-6px);
+	text-align: center;
+}
+
+
+/********* Основное поле  MAIN **************/
+
+main{
+	color: gray;
+	max-width: 1280px;
+	min-height: 87vh;
+	margin:0 auto;
+}
+
+.flex{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.flex-grow-1{
+	flex-grow: 1;
+}
+
+.centered{
+	text-align: center;
+}
+
+.font-color-green{
+	color: green;
+	font-size: 1em;
+	font-family: "Arial";
+}
+
+
+.flex-column{
+	display: flex;
+  	flex-direction: column;
+  	justify-content: space-around;
+}
+
+.column{
+	flex-direction: column;
+}
+
+
+.flex-column p{
+	padding: 3px;
+	border-radius: 3px;
+}
+
+.flex-column p:hover{
+	cursor: pointer;
+	border: 1px solid gray;
+}
+
+.activeTab{
+	background-color: gray;
+	color: white;
+}
+
+section .flex {
+	flex-wrap: wrap;
+}
+
+section .flex{
+	flex-basis: 150px;
+	margin: 3px; 
+	padding: 2px;
+	border-radius: 10px;
+}
+
+section .flex > div:hover{
+	color: white;
+	background-color: rgba(50,50,50,.65);
+	cursor: pointer;
+}
+
+input[name="sum"], input[name="phone"]{
+	font-size: 14px;
+	font-weight: bold;
+	padding:3px;
+	border:2px solid lightblue;
+}
+
+
+
+.btn{
+	border:1px solid lightblue;
+	padding: 3px;
+	color: gray;
+}
+
+.btn:hover{
+	background-color: yellow;
+	cursor: pointer;
+}
+
+#container{
+	position: relative;
+}
+
+#container section{
+	transform: translateY(-30px);
+	transition: .1s ease-in-out;
+	visibility: hidden;
+	position: absolute;
+}
+
+#container section.active {
+	visibility: visible;
+	transition: .5s ease-in-out;
+	transition-delay: .1s;
+	transform: translateY(0px);
+}
+
+/******  FOOTER   ******/
+
+
+footer{
+	display: grid;
+}
+
+footer > * {
+display: grid;
+background-color: rgba(50,50,50,.45);
+color: white;
+justify-content: center;
+align-items: center;
+}
+
+footer > *:hover {
+background-color: white;
+color: gray;
+cursor: pointer;
+
+}

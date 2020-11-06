@@ -1,0 +1,84 @@
+.modal-body{
+	position: fixed;
+	top: 25%;
+	display: none;
+	height: 50%;
+	z-index: 3;
+	border:4px solid white;
+	background-color: beige;
+	border-radius: 5px;
+}
+
+
+
+.close{
+	display: flex;
+	justify-content: flex-end;
+	padding: 10px;
+}
+
+.modal-content{
+	display: flex;
+  	flex-direction: column;
+  	justify-content: space-between;
+  	align-items: center;
+  	height: 75%;
+}
+
+.modal-bg:target{
+	display: block;
+}
+
+.modal-bg:target ~ .modal-body{
+	display: block;
+}
+
+.submenu{
+	display: none;
+	position: relative;
+	color: gray;
+
+}
+
+.submenu ul {
+  padding: 0;
+  position: absolute;
+  margin-top: 5px;
+  background-color: white;
+
+}
+#hamburger:hover{
+	cursor: pointer;
+}
+#hamburger:hover > div.submenu {
+	display: block;
+
+}
+
+#form-container{
+			border: 1px solid gray;
+			border-radius: 10px;
+			background-color: rgba(51,51,51,.35);
+			width: 65%;
+			margin: auto;
+		}
+		.inputContainer{
+			width: 100%;
+			margin: auto;
+			padding-bottom: 10px;
+			border-bottom: 2px solid white;
+		}
+		.localWrapper{
+			width: 75%;
+			margin:auto;
+		}
+		label{
+			font-size: 16px;
+			color: white;
+			font-weight: bold;
+		}
+
+		input[name="nickname"], input[name="email"]{
+			font-weight: bold;
+			width: 100%;
+		}

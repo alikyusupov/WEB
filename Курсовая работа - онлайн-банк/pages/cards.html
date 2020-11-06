@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>
+		MEVN - online banking / cards
+	</title>
+	<link rel="stylesheet" type="text/css" href="../assets/styles/style.css">
+	<link rel="stylesheet" type="text/css" href="../assets/styles/grid.css">
+	<link rel="stylesheet" type="text/css" href="../assets/styles/animation.css">
+	<link rel="stylesheet" type="text/css" href="../assets/styles/modal.css">
+
+</head>
+<body id="body_cards">
+	<!--MODAL-->
+		<div class="modal-bg" id="modalBG">
+		
+		</div>
+		<div class="modal-body">
+			<section class="close">
+				<a href="#">
+					x
+				</a>
+			</section>
+			<section class="modal-content">
+				<div class="col-sm-3">
+
+				</div>
+				<div id="form-container" class="col-sm-6">
+					<form>
+						<section class="inputContainer">
+							<div class="localWrapper">
+								<label for="nickname">Ваше имя</label>
+								<br>
+								<input id="nickname" type="text" name="nickname" minlength="3" placeholder="не менее трех символов" required autofocus>
+							</div>
+						</section>
+						<section class="inputContainer">
+							<div class="localWrapper">
+								<label for="email">E-mail</label>
+								<br>
+								<input id="email" type="email" name="email" placeholder="например user@domain.com" required autocomplete="on">
+							</div>
+						</section>
+					</form>
+				</div>
+				<div class="col-sm-3">
+
+				</div>
+			</section>
+		</div>
+	<!--END MODAL-->
+	<nav>
+		<ul>
+			<li>
+				<a href="./index.html">
+					<img id="logo" src="../assets/images/logo.png">
+				</a>
+			</li>
+			<li>
+				<!--пустая лишка flex-grow: 1-->
+			</li>
+			<li class="menu-item">
+				<a href="./cards.html">
+					Мои карты
+				</a>
+			</li>
+			<li class="menu-item badge-holder">
+				<a href="./offers.html">
+					Предложения
+					<span class="badge">1</span>
+				</a>
+			</li>
+			<li class="menu-item">
+				<a href="#modalBG">
+					Войти
+				</a>
+			</li>
+			<li id="hamburger">
+				Menu &#9660;
+				<div class="submenu">
+					<ul>
+						<li>
+							Courses
+						</li>
+						<li>
+							Merch
+						</li>
+						<li>
+							Franchise
+						</li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+	</nav>
+
+
+	<main>
+		<div class="row">
+			<div class="
+			col-sm-12 
+			col-lg-6 
+			col-xl-3 
+			centered">
+				<h2>Мои карты</h2>
+				<svg version="1.1" id="cards" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 			viewBox="0 0 300 300" style="enable-background:new 0 0 300 300;" xml:space="preserve">
+				<style type="text/css">
+					.highest{fill:#7A94C1;stroke:#000000;stroke-miterlimit:10;}
+					.middle{fill:#7D6BBF;stroke:#000000;stroke-miterlimit:10;}
+					.lowest{fill:#BF651B;stroke:#000000;stroke-miterlimit:10;}
+				</style>
+				<path id="highest" data-fill="#7A94C1" class="highest" d="M244.2,136.1h-188c-4.2,0-7.5-3.4-7.5-7.5V19.8c0-4.2,3.4-7.5,7.5-7.5h188c4.2,0,7.5,3.4,7.5,7.5
+					v108.8C251.8,132.7,248.4,136.1,244.2,136.1z"/>
+				<path id="middle" data-fill="#7D6BBF" class="middle" d="M248.4,209.4h-188c-4.2,0-7.5-3.4-7.5-7.5V93.1c0-4.2,3.4-7.5,7.5-7.5h188c4.2,0,7.5,3.4,7.5,7.5
+					v108.8C256,206,252.6,209.4,248.4,209.4z"/>
+				<path id="lowest" data-fill="#BF651B" #7A94C1 class="lowest" d="M254.4,279.6h-188c-4.2,0-7.5-3.4-7.5-7.5V163.4c0-4.2,3.4-7.5,7.5-7.5h188
+					c4.2,0,7.5,3.4,7.5,7.5v108.8C261.9,276.3,258.5,279.6,254.4,279.6z"/>
+				</svg>
+			</div>
+			<div class="
+			col-sm-12 
+			col-lg-6 
+			col-xl-9 
+			centered">
+				<h3>Номер карты: <span id="nomer"></span></h3>
+				<div class="row">
+					<div class="
+					col-sm-12 
+					col-xl-6">
+						<h3>Реквизиты: <span class="font-color-green" id="info"></span></h3>
+					</div>
+					<div class="
+					col-sm-12 
+					col-xl-6">
+						<h3>Состояние счета: <span  id="balance" class="font-color-green"></span></h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="
+					col-sm-12 
+					col-xl-3">
+						<h3 id="selectCard">Выберите карту</h3>
+						<svg version="1.1" id="creditCard" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 					viewBox="0 0 300 200" style="enable-background:new 0 0 300 200;" xml:space="preserve">
+							<style type="text/css">
+								.creditCard{fill:none;stroke:#000000;stroke-miterlimit:10;}
+							</style>
+							<path id="card" class="creditCard" d="M280.6,185.7H20.1c-5.8,0-10.4-4.7-10.4-10.4V24.7c0-5.8,4.7-10.4,10.4-10.4h260.6
+							c5.8,0,10.4,4.7,10.4,10.4v150.8C291,181.1,286.3,185.7,280.6,185.7z"/>
+						</svg>
+					</div>
+					<div class="
+					col-sm-12 
+					col-xl-9">
+						<div class="row">
+							<div class="
+							col-sm-12 
+							col-xl-6">
+								<p>История операций</p>
+								<ul id="hook">
+									<!--Динамическая подгрузка контента-->
+								</ul>
+							</div>
+							<div class="
+							col-sm-12 
+							col-xl-6">
+								<p>Структура расходов</p>
+								<canvas id="myChart"></canvas>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<section style="height: 90px;">
+			<div id="handlers" class="flex-column 
+			col-sm-12 
+			col-md-3
+			col-lg-6 
+			col-xl-3">
+			
+				<h2>Оплатить</h2>
+
+				<p>Интернет</p>
+				<p>Мобильная связь</p>
+
+			</div>
+			<div id="container" class="
+			col-sm-12
+			col-md-9
+			col-lg-6 
+			col-xl-9">
+				<section class="flex">
+					<div class="flex">Провайдер</div>
+					<div class="flex">Провайдер</div>
+					<div class="flex">Провайдер</div>
+					<div class="flex">Провайдер</div>
+					<div class="flex">Провайдер</div>
+					<div class="flex">Провайдер</div>
+					<div class="flex">Провайдер</div>
+					<div class="flex">Провайдер</div>
+				</section>
+				<section>
+					<form class="flex-column" style="height: 90px;">
+						<div>
+							<input type="text" name="phone" id="phone" placeholder="+7" autofocus>
+							<label for="phone">Телефон</label>
+						</div>
+						<div>
+							<input type="text" name="sum" id="sum" placeholder="0.00">
+							<label for="sum">₽ <span class="btn"> Оплатить</span></label>
+						</div>
+					</form>
+				</section>
+			</div>
+		</section>
+	</main>
+	<br>
+	<footer>
+		<div class="1">О нас</div>
+		<div class="2">Миссия</div>
+		<div class="3">Руководство</div>
+		<div class="4">Вакансии</div>
+		<div class="5">Новости</div>
+		<div class="6">Контакты</div>
+		<div class="7">Партнерам</div>
+		<div class="8">Политика</div>
+	</footer>
+	
+
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+	<script type="text/javascript" src="../assets/scripts/script.js"></script>
+</body>
+</html>

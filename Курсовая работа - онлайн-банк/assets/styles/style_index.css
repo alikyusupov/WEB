@@ -1,0 +1,49 @@
+header{
+	background-color: #2c2d32;
+	display: flex;
+	color: white;
+	align-items: center;
+}
+
+.d-flex{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.d-flex > div{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 50%;
+	height: 30vh;
+}
+
+.d-flex > div p{
+	padding: 0px 33px;
+}
+
+.d-flex h2{
+	padding-left: 17%;
+}
+
+.reverse{
+	flex-direction: row-reverse;
+}
+
+main{
+	margin-top: 10px;
+}
+
+@media screen and (min-width: 1px){
+
+	.d-flex > div{
+					width: 100%;
+				}
+
+}
+/*iPad and tabs*/
+@media screen and (min-width: 768px){
+	.d-flex > div{
+					width: 50%;
+				}
+}

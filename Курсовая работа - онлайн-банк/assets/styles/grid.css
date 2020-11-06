@@ -1,0 +1,107 @@
+.row, .shadow{
+	box-shadow:   0px 1px 30px 0px rgba(50, 50, 50, 0.15);
+}
+
+.row, [class*="col-"] {
+	padding: 7px;
+	border-radius: 10px;
+}
+
+[class*="col-"] {
+	float: left;
+	/*box-shadow:   0px 1px 30px 0px rgba(50, 50, 50, 0.15);*/
+}
+
+/* clearfix */
+.row::after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+
+/*mobile phones*/
+@media screen and (min-width: 1px){
+	.col-sm-12 	{ width: 100% }
+	#cards		{ width: 65% }
+	footer 		{	margin-top: 100px;
+					grid-template-rows: 8fr;
+					grid-template-columns: 1fr;
+				}
+
+	header	section, .menu-item	{
+					display: none;
+	}
+	footer > *	{
+					padding: 2px;
+				}
+	.modal-body{
+			left: 0;
+			width: 100%;
+	}
+
+}
+/*iPad and tabs*/
+@media screen and (min-width: 576px){
+	.col-md-3 	{ width: 25% }
+	.col-md-9 	{ width: 75% }
+	#cards 		{ width: 35% }
+	#creditCard { width: 50% }
+	footer 		{margin-top: 10px;
+					grid-template-rows: 4fr;
+					grid-template-columns: repeat(2, 1fr);
+				}
+}
+/*small netbooks*/
+@media screen and (min-width: 768px){
+	.col-lg-3 	{ width: 25% }
+	.col-lg-6 	{ width: 50% }
+	.col-lg-9 	{ width: 75% }
+	.col-lg-12 	{ width: 100% }
+	#cards 		{ width: 50%;
+				  padding-top: 20vh }
+	footer 		{
+					grid-template-rows: 1fr;
+					grid-template-columns: repeat(8, 1fr);
+				}
+	header		{	
+					justify-content: flex-start;
+
+				}
+	header section, .menu-item	{
+					display: block;
+				}
+	header img	{
+					width: 70%;
+				}
+	footer > *	{
+					padding: 4px;
+				}
+	#hamburger {
+					display: none;
+				}
+	.modal-body{
+			left: 25%;
+			width: 50%;
+	}
+
+}
+/*notebooks and desktop computers*/
+@media screen and (min-width: 1140px) {
+	.col-xl-3 	{ width: 25% }
+	.col-xl-6 	{ width: 50% }
+	.col-xl-9 	{ width: 75% }
+	#creditCard { width: 95% }
+	#cards 		{ width: 100%;
+	 			  padding-top: 0}
+	header		{
+					justify-content: center;
+				}
+	header img	{
+					width: 100%;
+				}
+	footer > *	{
+					padding: 9px;
+				}
+}

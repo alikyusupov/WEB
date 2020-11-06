@@ -1,0 +1,55 @@
+main > section {
+	min-height: calc((100vh - 57px - 35px)/2);
+	color: white;
+}
+
+main section:nth-child(1){
+	background-image: url(../images/rusflix.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+main section:nth-child(1) h1{
+	color: #de2f3a;
+	background-color: white;
+	padding: 2px;
+	border-radius: 3px;
+}
+
+main section:nth-child(1) h3{
+	color: #ffffff;
+	padding: 4px;
+	border: 2px solid white;
+	border-radius: 3px;
+}
+
+main section:nth-child(1) h3:hover{
+	color: gray;
+	background-color: white;
+	cursor: pointer;
+}
+main section div{
+	perspective: 600px;
+}
+h2{
+	text-align: center;
+}
+
+.f{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.column{
+	flex-direction: column;
+}
+
+img{
+	width: 40%;
+    -webkit-transform: rotateX(33deg) rotateY(29deg) rotateZ(-18deg);
+    -moz-transform: rotateX(33deg) rotateY(29deg) rotateZ(-18deg);
+    transform: rotateX(33deg) rotateY(29deg) rotateZ(-18deg);
+ } 

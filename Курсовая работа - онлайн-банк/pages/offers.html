@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>
+		MEVN - online banking / offers
+	</title>
+	<link rel="stylesheet" type="text/css" href="../assets/styles/style.css">
+	<link rel="stylesheet" type="text/css" href="../assets/styles/grid.css">
+	<link rel="stylesheet" type="text/css" href="../assets/styles/style_offers.css">
+	<link rel="stylesheet" type="text/css" href="../assets/styles/modal.css">
+
+</head>
+<body>
+	<!--MODAL-->
+		<div class="modal-bg" id="modalBG">
+		
+		</div>
+		<div class="modal-body">
+			<section class="close">
+				<a href="#">
+					x
+				</a>
+			</section>
+			<section class="modal-content">
+				<div class="col-sm-3">
+
+				</div>
+				<div id="form-container" class="col-sm-6">
+					<form>
+						<section class="inputContainer">
+							<div class="localWrapper">
+								<label for="nickname">Ваше имя</label>
+								<br>
+								<input id="nickname" type="text" name="nickname" minlength="3" placeholder="не менее трех символов" required autofocus>
+							</div>
+						</section>
+						<section class="inputContainer">
+							<div class="localWrapper">
+								<label for="email">E-mail</label>
+								<br>
+								<input id="email" type="email" name="email" placeholder="например user@domain.com" required autocomplete="on">
+							</div>
+						</section>
+					</form>
+				</div>
+				<div class="col-sm-3">
+
+				</div>
+			</section>
+		</div>
+	<!--END MODAL-->
+	<nav>
+		<ul>
+			<li>
+				<a href="./index.html">
+					<img id="logo" src="../assets/images/logo.png">
+				</a>
+			</li>
+			<li>
+				<!--пустая лишка flex-grow: 1-->
+			</li>
+			<li class="menu-item">
+				<a href="./cards.html">
+					Мои карты
+				</a>
+			</li>
+			<li class="menu-item">
+				Предложения
+			</li>
+			<li class="menu-item">
+				<a href="#modalBG">
+					Войти
+				</a>
+			</li>
+			<li id="hamburger">
+				Menu &#9660;
+				<div class="submenu">
+					<ul>
+						<li>
+							Courses
+						</li>
+						<li>
+							Merch
+						</li>
+						<li>
+							Franchise
+						</li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+	</nav>
+
+
+
+	<main>
+		<section class="f column">
+			<h1>RUSFLIX</h1>
+			<h2>Оформи карту</h2>
+			<h2>и получи месяц подписки!</h2>
+			<h3>Оформить</h3>
+		</section>
+		<h2>Для Вас доступны карты</h2>
+		<section class="f">
+			<div class="f col-sm-12 col-lg-6">
+				<img src="../assets/images/card.png">
+			</div>
+			<div class="f col-sm-12 col-lg-6">
+				<img src="../assets/images/card.png">
+			</div>
+			<div class="f col-sm-12 col-lg-6">
+				<img src="../assets/images/card.png">
+			</div>
+			<div class="f col-sm-12 col-lg-6">
+				<img src="../assets/images/card.png">
+			</div>
+		</section>
+	</main>
+
+
+	<footer>
+		<div class="1">О нас</div>
+		<div class="2">Миссия</div>
+		<div class="3">Руководство</div>
+		<div class="4">Вакансии</div>
+		<div class="5">Новости</div>
+		<div class="6">Контакты</div>
+		<div class="7">Партнерам</div>
+		<div class="8">Политика</div>
+	</footer>
+</body>
+</html>
