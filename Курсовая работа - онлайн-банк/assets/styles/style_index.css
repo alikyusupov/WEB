@@ -22,9 +22,7 @@ header{
 	padding: 0px 33px;
 }
 
-.d-flex h2{
-	padding-left: 17%;
-}
+
 
 .reverse{
 	flex-direction: row-reverse;
